@@ -1,0 +1,32 @@
+.person {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  position: absolute;
+}
+
+.healthy {
+  background-color: green;
+}
+
+.infected {
+  background-color: pink;
+}
+
+.sick {
+  background-color: red;
+}
+
+.recovered {
+  background-color: aquamarine;
+}
+
+.dead {
+  background-color: grey;
+}
+
+.hospitalized{
+  
+}

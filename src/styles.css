@@ -1,0 +1,27 @@
+/* Add application styles & imports to this file! */
+
+body {
+  overflow: hidden;
+}
+
+
+
+.healthy {
+  background-color: green;
+}
+
+.infected {
+  background-color: pink;
+}
+
+.sick {
+  background-color: red;
+}
+
+.recovered {
+  background-color: aquamarine;
+}
+
+.dead {
+  background-color: grey;
+}

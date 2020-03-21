@@ -1,0 +1,40 @@
+.board {
+  display: block;
+  position: absolute;
+  width: 155px;
+  background-color:aliceblue;
+  opacity: 0.9;
+}
+
+td {
+  padding: 5px;
+}
+
+.person {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  position: relative;
+  display: inline-block;
+}
+
+.healthy {
+  background-color: green;
+}
+
+.infected {
+  background-color: pink;
+}
+
+.sick {
+  background-color: red;
+}
+
+.recovered {
+  background-color: aquamarine;
+}
+
+.dead {
+  background-color: grey;
+}

@@ -1,0 +1,97 @@
+<div class="board">
+	<table>
+		<tr>
+			<td>
+				<span class="person healthy"></span>
+				Healthy
+			</td>
+			<td>
+				{{ status['healthy'] || 0}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="person recovered"></span>
+
+				Recov'ed
+			</td>
+			<td>
+				{{status['recovered'] || 0}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="person infected"></span>
+
+				Infected
+			</td>
+			<td>
+				{{status['infected'] || 0}}
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<span class="person sick"></span>
+
+				Sick
+			</td>
+			<td>
+				{{status['sick'] || 0}}
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Hospital
+			</td>
+			<td>
+				{{ ( status['hospital'])||0 }}/{{hospitalSize}}
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Wait List
+			</td>
+			<td>
+				{{ ( status['waitList'])||0 }}
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<span class="person dead"></span>
+
+				Dead
+			</td>
+			<td>
+				{{status['dead'] || 0}}
+			</td>
+		</tr>
+	</table>
+  <hr>
+  <label>
+    Population
+   <input type="text" [(ngModel)]="personService.settings.population">
+  </label><br>
+	<label>
+    <input type="checkbox" [(ngModel)]="personService.settings.distancing">
+    Social distancing
+  </label><br>
+  <label >
+  Hospital Limit
+  <input type="text" [(ngModel)]="personService.settings.hospitalBedSize">
+  </label>
+	<!-- <label >
+  Recovery Time
+  <input type="text" [(ngModel)]="personService.settings.recoveryTime">
+  </label>
+
+	<label >
+  Sickness Duration
+  <input type="text" [(ngModel)]="personService.settings.sicknessDuration">
+  </label> -->
+	<button (click)="restart()">Restart</button>
+
+</div>
